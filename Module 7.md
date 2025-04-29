@@ -1,9 +1,9 @@
-EXP NO:1A C PROGRAM FOR ARRAY OF STRUCTURE TO CHECK ELIGIBILITY FOR THE VACCINE.
+## EXP NO 1A : C PROGRAM FOR ARRAY OF STRUCTURE TO CHECK ELIGIBILITY FOR THE VACCINE.
 
-Aim:
+## Aim:
 To write a C program for array of structure to check eligibility for the vaccine person age above 6 years of age.
 
-Algorithm:
+## Algorithm:
 1.	Declare structure eligible with age (integer) and n (character array)
 2.	Declare variable e of type eligible
 3.	Input age and name using scanf, store in e
@@ -14,8 +14,8 @@ Else
 5.	Print details (e.age, e.n)
 6.	Return 0
  
-Program:
-```c
+## Program:
+~~~c
 #include<stdio.h> 
 struct eligib
 {
@@ -34,22 +34,22 @@ printf("Age:%d\nName:%svaccine:%d\neligibility:yes",e.age,e.n,e.age);
 
 }
 }
-```
-Output:
+~~~
 
-![437947170-8e16bbc4-211e-416e-aa81-ae27ba164f94](https://github.com/user-attachments/assets/b8034072-c6b9-43e3-aae8-72c97276f650)
+## Output:
+![437942938-f0f0bf4e-4dde-4304-9b9f-581b933479dd](https://github.com/user-attachments/assets/8e16bbc4-211e-416e-aa81-ae27ba164f94)
 
-
-Result:
+## Result:
 Thus, the program is verified successfully. 
 
 
 
-EXP NO:1B C PROGRAM FOR PASSING STRUCTURES AS FUNCTION ARGUMENTS AND RETURNING A STRUCTURE FROM A FUNCTION
-Aim:
+## EXP NO 1B : C PROGRAM FOR PASSING STRUCTURES AS FUNCTION ARGUMENTS AND RETURNING A STRUCTURE FROM A FUNCTION
+
+## Aim:
 To write a C program for passing structure as function and returning a structure from a function
 
-Algorithm:
+## Algorithm:
 1.	Define structure numbers with members a and b.
 2.	Declare variable n of type numbers.
 3.	Prompt the user to enter values for a and b.
@@ -58,9 +58,8 @@ Algorithm:
 6.	Print the result returned by the add function.
 7.	Return 0
  
-Program:
-
-```c
+## Program:
+~~~c
 #include<stdio.h> 
 struct numbers
 {
@@ -75,24 +74,22 @@ int add(struct numbers n)
 {
 return n.a+n.b;
 }
-```
+~~~
+## Output:
 
-Output:
+![437943018-c9bbef68-f5d6-4ea5-abdf-738c3613fb66](https://github.com/user-attachments/assets/2cbc3b38-e644-48a0-8784-2a5a3e3547c8)
 
-![437947415-2cbc3b38-e644-48a0-8784-2a5a3e3547c8](https://github.com/user-attachments/assets/164b8aba-f53d-4501-b469-a029b5b94d02)
-
-
-Result:
+## Result:
 Thus, the program is verified successfully
 
 
  
-EXP.NO:1C C PROGRAM TO READ A FILE NAME FROM USER AND WRITE THAT FILE USING FOPEN()
+## EXP.NO 1C : C PROGRAM TO READ A FILE NAME FROM USER AND WRITE THAT FILE USING FOPEN()
 
-Aim:
+## Aim:
 To write a C program to read a file name from user
 
-Algorithm:
+## Algorithm:
 1.	Include the necessary header file stdio.h.
 2.	Begin the main function.
 3.	Declare a file pointer p.
@@ -109,8 +106,8 @@ Use scanf to input the file name into the name array.
 4.	End the main function.
 5.	Return 0 to indicate successful program execution.
  
-Program:
-```c
+## Program:
+~~~c
 #include <stdio.h> int main()
 {
  FILE *p;
@@ -119,20 +116,22 @@ Program:
  printf("\n%s File Opened",name); fclose(p);
  printf("\n%s File Closed",name);
 }
-```
-Output:
-![437947495-216e5461-96f5-411b-947f-bdd9c3dc70df](https://github.com/user-attachments/assets/c46fe231-5ced-429b-9bbc-dbbe17a0e51e)
+~~~
+## Output:
 
+![437943057-03b78301-cd7e-4c98-a32a-331efe240285](https://github.com/user-attachments/assets/216e5461-96f5-411b-947f-bdd9c3dc70df)
 
-Result:
+## Result:
 Thus, the program is verified successfully
  
 
 
-EXP NO:1D   PROGRAM TO READ A FILE NAME FROM USER, WRITE THAT FILE AND INSERT TEXT IN TO THAT FILE
-Aim:
+## EXP NO 1D : PROGRAM TO READ A FILE NAME FROM USER, WRITE THAT FILE AND INSERT TEXT IN TO THAT FILE
+
+## Aim:
 To write a C program to read, a file and insert text in that file
-Algorithm:
+
+## Algorithm:
 1.	Include the necessary header file stdio.h.
 2.	Begin the main function.
 3.	Declare a file pointer p.
@@ -149,8 +148,8 @@ Use scanf to input the file name into the name array and the number of strings i
 4.	End the main function.
 5.	Return 0 to indicate successful program execution.
  
-Program:
-```c
+## Program:
+~~~c
 #include <stdio.h> 
 int main()
 {
@@ -165,50 +164,37 @@ int main()
  printf("\nData added Successfully");
 
 }
-```
-Output:
-![437947590-0b363545-9214-4b27-8177-8766c0c9f958](https://github.com/user-attachments/assets/4ff0622d-76da-4d24-8c13-602bb7782c43)
+~~~
+## Output:
+![437943116-9761eb6a-a91a-4fd4-b09e-d26607c4f9a6](https://github.com/user-attachments/assets/0b363545-9214-4b27-8177-8766c0c9f958)
 
-
-Result:
+## Result:
 Thus, the program is verified successfully
 
 
 
-Ex No:1E C PROGRAM TO DISPLAY STUDENT DETAILS USING STRUCTURE
+## Ex No 1E : C PROGRAM TO DISPLAY STUDENT DETAILS USING STRUCTURE
 
-Aim:
+## Aim:
 The aim of this program is to dynamically allocate memory to store information about multiple subjects (name and marks), input the details for each subject, and then display the stored information. Finally, it frees the allocated memory to prevent memory leaks.
 
-Algorithm:
+## Algorithm:
 1.Input the number of subjects.
-
 2.Read the integer value n from the user, which represents the number of subjects.
-
 3.Dynamically allocate memory:
-
 4.Use malloc to allocate memory for n subjects. Each subject has a name (array of characters) and marks (integer).
-
 5.If memory allocation fails (i.e., the pointer s is NULL), display an error message and exit the program.
-
 6.Input the details of each subject
-
 7.Use a for loop to read the name and marks of each subject using scanf. For each subject, store the name as a string and marks as an integer in the dynamically allocated memory.
-
 8.Display the details of each subject
-
 9.Use another for loop to print the name and marks of each subject.
-
 10.Free the allocated memory
-
 11.After all operations are done, call free(s) to release the dynamically allocated memory.
-
 12.Return from the main function
-
 13.End the program by returning 0.
 
-Program:
-```c
+## Program:
+~~~c
 #include <stdio.h>
 #include <stdlib.h>
 struct Subject
@@ -239,10 +225,10 @@ int main()
     
     return 0;
 }
-```
-Output:
-![437947952-824824f3-b270-49a2-af0f-9a14a726193a](https://github.com/user-attachments/assets/191cbb24-2aa2-4896-9e1f-54eddd138e27)
+~~~
 
+## Output:
+![437943207-5a90ce8b-84af-4b77-a78a-eab3f9e4b944](https://github.com/user-attachments/assets/824824f3-b270-49a2-af0f-9a14a726193a)
 
-Result:
+## Result:
 Thus, the program is verified successfully
